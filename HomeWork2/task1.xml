@@ -1,4 +1,4 @@
-ё <mujoco>
+<mujoco>
     <option timestep="0.00001" />
     <actuator>
         <motor gear="250" joint="shoulder_pitch" name="shoulder_pitch" ctrlrange="-100 100" ctrllimited="true"/>
@@ -23,10 +23,10 @@
         </body>
         <body name="link_1" pos=".965 0 1.8">
             <joint name="shoulder_pitch" pos="0 0 0" axis="1 0 0" />
-            <geom type="cylinder" size=".198 .165" pos="0 0 0" mass="65" euler="0 90 0" material="black" />
+            <geom type="cylinder" size=".198 .165" pos="0 0 0" density="65" euler="0 90 0" material="black" />
             <body name="link_2" pos="0.363 0 0" euler="0 90 0">
                 <joint name="shoulder_roll" pos="0 0 0" axis="1 0 0" />
-                <geom type="cylinder" size=".198    .165" pos="0 0 0" mass="65" euler="0 90 0" material="black" />
+                <geom type="cylinder" size=".198    .165" pos="0 0 0" density="65" euler="0 90 0" material="black" />
                 <body name="link_3" pos="0 0.396 0" euler="0 90 0">
                     <joint name="shoulder_yaw" pos="0 0 0" axis="1 0 0" />
                     <geom type="cylinder" size=".198 .165" pos="0 0 0" density="65" euler="0 90 0" material="black" />
